@@ -4,12 +4,10 @@ const Header = (props) => {
   return (
     <nav className="grey darken-3">
       <div className="nav-wrapper">
-        <a href="#" className="brand-logo">
-          React movies
-        </a>
+        <span className="brand-logo">React movies</span>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <a href="#">Repo</a>
+            <a href="https://github.com/Stimul22/movie-app">Repo</a>
           </li>
         </ul>
       </div>

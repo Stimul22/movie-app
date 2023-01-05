@@ -37,8 +37,6 @@ export const getMovies = (type, search) => {
         type !== "all" ? `&type=${type}` : ""
       }`
     );
-    console.log(result);
-
     dispatch({
       type: SET_MOVIES,
       movies: result.data.Search ?? [],

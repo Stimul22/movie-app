@@ -14,7 +14,7 @@ const Movies = (props) => {
       ) : movies.length ? (
         movies.map((movie) => <Movie key={movie.imdbID} {...movie} />)
       ) : (
-        <h4>Not Found</h4>
+        <h4 className="notFound">Not Found</h4>
       )}
     </div>
   );
