@@ -10,7 +10,9 @@ const Movies = (props) => {
   return (
     <div className="movies">
       {fetching ? (
-        <Preloader />
+        <div className="loading">
+          <Preloader />
+        </div>
       ) : movies.length ? (
         movies.map((movie) => <Movie key={movie.imdbID} {...movie} />)
       ) : (
